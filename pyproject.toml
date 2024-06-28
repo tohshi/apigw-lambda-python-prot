@@ -3,9 +3,9 @@ name = "apigw-lambda-python-prot"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "tohshi", email = "28751206+tohshi@users.noreply.github.com" }
+    { name = "tohshi", email = "28751206+tohshi@users.noreply.github.com" },
 ]
-dependencies = []
+dependencies = ["aws-lambda-powertools[all]>=2.40.1"]
 readme = "README.md"
 requires-python = ">= 3.12"
 
@@ -15,10 +15,10 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = ["black>=24.4.2", "flask>=3.0.3", "pytest>=8.2.2"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/apigw_lambda_python_prot"]
+packages = ["src"]
