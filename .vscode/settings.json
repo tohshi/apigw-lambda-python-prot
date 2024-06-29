@@ -6,6 +6,9 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "python.analysis.typeCheckingMode": "standard",
     "flake8.args": [

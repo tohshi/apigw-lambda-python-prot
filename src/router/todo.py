@@ -1,7 +1,7 @@
 from aws_lambda_powertools.event_handler.api_gateway import Router
-from controller.todo import TodoController
-from service.todo import TodoService
 
+from ..controller.todo import TodoController
+from ..service.todo import TodoService
 
 router = Router()
 

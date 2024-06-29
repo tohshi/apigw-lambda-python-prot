@@ -1,4 +1,4 @@
-from controller.todo import TodoService as ITodoService
+from ..controller.todo import TodoService as ITodoService
 
 
 class TodoService(ITodoService):

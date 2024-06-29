@@ -2,7 +2,8 @@ from aws_lambda_powertools import Logger
 from aws_lambda_powertools.event_handler import APIGatewayHttpResolver
 from aws_lambda_powertools.logging import correlation_paths
 from aws_lambda_powertools.utilities.typing import LambdaContext
-from router.todo import router as TodoRouter
+
+from .router.todo import router as TodoRouter
 
 logger = Logger()
 app = APIGatewayHttpResolver()
